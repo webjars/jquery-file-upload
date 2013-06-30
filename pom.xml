@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-file-upload</artifactId>
-    <version>8.4.2-SNAPSHOT</version>
+    <version>8.4.2</version>
     <name>jQuery-File-Upload</name>
     <description>WebJar for jQuery-File-Upload</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery-file-upload</url>
         <connection>scm:git:https://github.com/webjars/jquery-file-upload.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-file-upload.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-file-upload-8.4.2</tag>
     </scm>
     
     <dependencies>
@@ -93,7 +93,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jQuery-File-Upload-${upstream.version}" excludes="server/,js/vendor/,test/"/>
+                                    <fileset dir="${project.build.directory}/jQuery-File-Upload-${upstream.version}" excludes="server/,js/vendor/,test/" />
                                 </move>
                             </target>
                         </configuration>
